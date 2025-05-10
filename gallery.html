@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="UTF-8">
         <meta name="author" content="Łukasz Gołębiewski">
         <meta name="description" content="Strona projektu serwisu internetowego na Języki tworzenia WWW">
@@ -9,37 +10,93 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <link rel="manifest" href="site.webmanifest">
-        <script src="galeria.js"></script>
-        <link rel="Stylesheet" href="galeria_zdjec.css">
+        <link rel="Stylesheet" href="style.css">
+        <link rel="Stylesheet" href="gallery.css">
+
     </head>
-    <body style="background-color:#E7E2D2;">
-        <h1 style="text-align: center;">Joaquin Phoenix - galeria zdjęć</h1>
-        <script>
-            var galeria = new Galeria('galeria', new Array(
-                new Array('mini1.jpg', 'joaquin1.jpg'),
-                new Array('mini2.jpg', 'joaquin2.jpg'),
-                new Array('mini3.jpg', 'joaquin3.jpg'),
-                new Array('mini4.jpg', 'joaquin4.jpg'),
-                new Array('mini5.jpg', 'joaquin5.jpg'),
-                new Array('mini6.jpg', 'joaquin6.jpg'),
-                new Array('mini7.jpg', 'joaquin7.jpg'),
-                new Array('mini8.jpg', 'joaquin8.jpg'),
-                new Array('mini9.jpg', 'joaquin9.jpg'),
-                new Array('mini10.jpg', 'joaquin10.jpg')
-            ));
-            </script>
-        <a style="font-size:150%" href="index.html">Strona główna</a>
-        <br>
-        <br>
-        <a style="font-size:150%" href="subpage.html">Informacje o aktorze</a>
-        <br>
-        <br>
-        <a style="font-size:150%" href="movies.html">Filmy</a>
-        <br>
-        <br>
-        <a style="font-size:150%" href="articles.html">Artykuły</a>
-        <br>
-        <br>
-        <a style="font-size:150%" href="author.html">Informacje o twórcy serwisu</a>
+    <body>
+        <div class="topnav">
+            <a href="index.html">Strona główna</a>
+            <a href="subpage.html">Informacje o aktorze</a>
+            <a href="movies.html">Filmy</a>
+            <a class="active" href="gallery.html">Galeria</a>
+            <a href="articles.html">Artykuły</a>
+            <a href="author.html" style="float:right">Informacje o twórcy serwisu</a>
+        </div>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 10</div>
+              <img src="joaquin1.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 10</div>
+              <img src="joaquin2.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 10</div>
+              <img src="joaquin3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 10</div>
+                <img src="joaquin4.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 10</div>
+                <img src="joaquin5.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 10</div>
+                <img src="joaquin6.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">7 / 10</div>
+                <img src="joaquin7.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">8 / 10</div>
+                <img src="joaquin8.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">9 / 10</div>
+                <img src="joaquin9.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">10 / 10</div>
+                <img src="joaquin10.jpg" style="width:100%">
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+          </div>
+          <script src="gallery.js"></script>
+
     </body>
 </html>

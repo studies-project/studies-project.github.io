@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="UTF-8">
+
         <meta name="author" content="Łukasz Gołębiewski">
         <meta name="description" content="Strona projektu serwisu internetowego na Języki tworzenia WWW">
         <title>Joaquin Phoenix - strona główna</title>
@@ -9,22 +11,32 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <link rel="manifest" href="site.webmanifest">
+        <link rel="stylesheet" href="style.css">
+        
     </head>
-    <body style="background-color:#E7E2D2;">
-        <h1>Joaquin Phoenix - strona główna</h1>
-        <img src="phoenix.jpg" alt="Zdjęcie przedstawiające aktora Joaquina Phoenixa w 2024 roku" width="400" height="600" align="left" style="margin-right: 20px;">
-        <a style="font-size:150%" href="subpage.html">Informacje o aktorze</a>
-        <br>
-        <br>
-        <a style="font-size:150%" href="movies.html">Filmy</a>
-        <br>
-        <br>
-        <a style="font-size:150%" href="gallery.html">Galeria</a>
-        <br>
-        <br>
-        <a style="font-size:150%" href="articles.html">Artykuły</a>
-        <br>
-        <br>
-        <a style="font-size:150%" href="author.html">Informacje o twórcy serwisu</a>
+    <body>
+
+        <div class="topnav">
+            <a class="active" href="index.html">Strona główna</a>
+            <a href="subpage.html">Informacje o aktorze</a>
+            <a href="movies.html">Filmy</a>
+            <a href="gallery.html">Galeria</a>
+            <a href="articles.html">Artykuły</a>
+            <a href="author.html" style="float:right">Informacje o twórcy serwisu</a>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-text">Joaquin Phoenix</div>
+                <div class="sub-text">
+                    Strona na potrzeby projektu serwisu internetowego na Języki tworzenia WWW.
+                    Strona poświęcona jest aktorowi Joaquinowi Phoenixowi. Kliknij na jeden z przycisków aby dowiedzieć się więcej o aktorze!
+                </div>
+            <div class="button">
+                <a href="subpage.html">Informacje o aktorze</a>
+                <a href="movies.html">Filmy</a>
+                <a href="articles.html">Artykuły</a>
+            </div>
+        </div>
+
     </body>
 </html>
