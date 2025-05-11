@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
 
         <meta name="author" content="Łukasz Gołębiewski">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Strona projektu serwisu internetowego na Języki tworzenia WWW">
         <title>Joaquin Phoenix - strona główna</title>
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -16,7 +17,7 @@
     </head>
     <body>
 
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
             <a href="index.html">Strona główna</a>
             <a href="subpage.html">Informacje o aktorze</a>
             <a href="movies.html">Filmy</a>
@@ -24,6 +25,9 @@
             <a href="articles.html">Artykuły</a>
             <a class="active" href="trivia.html">Ciekawostki</a>
             <a href="author.html" style="float:right">Informacje o twórcy serwisu</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                &#9776;
+            </a>
         </div>
 
         <p>Aktor jest weganinem i udzielał się na rzecz organizacji PETA</p>
@@ -32,6 +36,6 @@
         <p>Konto <a class="intext" href="https://www.instagram.com/joaquinlphoenix/">instagram</a> aktora ma 226 tys. obserwujących</p>
         <p>Role aktora są często opisywane jako mroczne, niekonwencjonalne i ekscentryczne</p>
         <p>Aktor ma na drugie imie Rafael</p>
-
+        <script src="hamburger.js"></script>
   </body>
 </html>
