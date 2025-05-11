@@ -9,6 +9,7 @@
         </style>
         <meta charset="UTF-8">
         <meta name="author" content="Łukasz Gołębiewski">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Strona projektu serwisu internetowego na Języki tworzenia WWW">
         <title>Joaquin Phoenix - filmy</title>
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -19,7 +20,7 @@
     </head>
     <body>
 
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
             <a href="index.html">Strona główna</a>
             <a href="subpage.html">Informacje o aktorze</a>
             <a class="active" href="movies.html">Filmy</a>
@@ -27,6 +28,9 @@
             <a href="articles.html">Artykuły</a>
             <a href="trivia.html">Ciekawostki</a>
             <a href="author.html" style="float:right">Informacje o twórcy serwisu</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                &#9776;
+            </a>
         </div>
 
         <table id="movies">
@@ -71,6 +75,6 @@
                 <td>2023</td>
             </tr>
         </table>
-
+        <script src="hamburger.js"></script>
     </body>
 </html>

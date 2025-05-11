@@ -51,6 +51,43 @@
     color: #FADF63;
   }
 
+/* HAMBURGER MENU ON MOBILE */
+
+.topnav a.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+.topnav.responsive {
+    flex-direction: column;
+    background-color: #222;
+    padding-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+  .topnav.responsive a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+  }
+
 body {
     background-image: url('background2.jpg');
     background-color: grey;
